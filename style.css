@@ -1,12 +1,176 @@
-header {
-    background-image: url("images/menuBanner.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f7ec;
+    color: #3b383a;
 }
 
-h1 {
-    color: darkred;
-    size 
+header {
+    background-color: #3b383a;
+    border-bottom: 0.25rem solid darkred;
+}
+
+header .wrapper {
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#menu {
+    z-index: 400;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+}
+
+.home img {
+    height: 100%;
+}
+
+#menu .menu-wrapper {
+    margin-left: auto;
+}
+
+#menu ul.main-menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu ul.main-menu li {
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-menu .homeb {
+    display: none;
+}
+
+.main-menu a {
+   color: darkred;
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-align: center;
+}
+
+.main-menu a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 840px) {
+
+} 
+
+.banner {
+    position: relative;
+    height: fit-content;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.title {
+    opacity: 0.8;
+    padding: 1rem;
+    position: absolute;
+    bottom: 300px;
+    top: 20%;
+}
+
+.title h1, .title h2 {
+    margin: 0;
+    padding: 0.15rem 0.35rem;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+}
+
+.title h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.title h2 {
+    color: grey;
+}
+
+@media only screen and (max-width: 840px) {
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .title h2 {
+        color: grey;
+        font-size: 0.75rem;
+    }
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.content .wrapper {
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.welcome {
+    font-size: 3rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.columns {
+    margin: 10px auto;
+    display: flex;
+    width: 100%;
+}
+
+.columns .left {
+    margin: 0 auto;
+}
+
+.columns .right {
+    margin: 0 auto;
+    border-top: 1px solid #3b383a;
+}
+
+.links {
+    padding: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a {
+    background-color: black;
+    color: white;
+    width: 75%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: darkred;
+    transition: 0.3s;
+}
+
+.links p {
+    margin: 0.5rem;
 }
