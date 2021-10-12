@@ -8,13 +8,26 @@
     <title>Curse of Strahd</title>
 </head>
 <body>
+
+    <div id="mobNavBack" class="mobBack"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/story.html">STORY</a>
+        <a href="/characters.html">CHARACTERS</a>
+        <a href="/npc.html">NPC'S</a>
+        <a href="/about.html">ABOUT</a>
+        <a href="/designer.html">CREATOR</a>
+    </div>
+
     <header>
         <div class="wrapper">
             <!-- Menu -->
             <nav id="menu">
                 <div class="logo">
-                    <a class="home" href="index.html"><img src="./images/rlcrest.png"/></a>
+                    <a class="home" href="index.html"><img id="logo" src="./images/rlcrest.png"/></a>
                 </div>
+                <span id="mobile-burger" onclick="openNav()">&#9776;</span>
                 <div class="menu-wrapper">
                     <ul class="main-menu">
                         <li><a href="/story.html">STORY</a></li>
@@ -60,5 +73,6 @@
             </div>
         </div>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>

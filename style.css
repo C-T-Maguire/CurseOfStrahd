@@ -17,6 +17,14 @@ header .wrapper {
     margin: 0 auto;
 }
 
+.sidenav {
+    display: none;
+}
+
+#mobile-burger {
+    display: none;
+}
+
 #menu {
     z-index: 400;
     height: 5rem;
@@ -24,12 +32,8 @@ header .wrapper {
     align-items: center;
 }
 
-.logo {
-    height: 100%;
-}
-
-.home img {
-    height: 100%;
+#logo:hover {
+    content: url('./images/rlcrestbw.png');
 }
 
 #menu .menu-wrapper {
@@ -61,10 +65,6 @@ header .wrapper {
     color: red;
     transition: 0.3s;
 }
-
-@media only screen and (max-width: 840px) {
-
-} 
 
 .banner {
     position: relative;
@@ -107,17 +107,6 @@ header .wrapper {
     color: grey;
 }
 
-@media only screen and (max-width: 840px) {
-    .title h1 {
-        font-size: 2.5rem;
-    }
-    
-    .title h2 {
-        color: grey;
-        font-size: 0.75rem;
-    }
-}
-
 .content {
     margin: 0 auto;
 }
@@ -145,7 +134,7 @@ header .wrapper {
 }
 
 .columns .right {
-    margin: 0 auto;
+    margin: 0 10px;;
     border-top: 1px solid #3b383a;
 }
 
@@ -173,4 +162,61 @@ header .wrapper {
 
 .links p {
     margin: 0.5rem;
+}
+
+@media only screen and (max-width: 840px) {
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .title h2 {
+        color: grey;
+        font-size: 0.75rem;
+    }
+
+    .menu-wrapper {
+        display: none;
+    }
+
+    #menu {
+        justify-content: space-between;
+    }
+
+    #mobile-burger {
+        margin-right: 2rem;
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+        color: darkred;
+        transition: 0.3s;
+    }
+
+    #mobile-burger:hover {
+        color: red;
+    }
+
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #feb16a;
+        display: block;
+        transition: 0.3s;
+        position: relative;
+        top: 0px;
+    }
 }
